@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, ContainerContent, ContainerHeader, Title, ContainerInput } from "./styles/styleHome";
+
+import logo from "./assets/logo4.png"
+
+import { FiSearch } from 'react-icons/fi';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container>
+        <ContainerContent>
+          <ContainerHeader>
+            <img src={logo} alt="" />
+            <Title>
+              <h1>Weather</h1>
+              <h1>Today</h1>
+            </Title>
+          </ContainerHeader>
+          <ContainerInput>
+            <input 
+            type="text" 
+            placeholder="Digite a cidade que deseja buscar..."
+            />
+
+            <button >
+              <FiSearch size={25} color='gray' />
+            </button>
+          </ContainerInput>
+        </ContainerContent>
+      </Container>
   );
 }
 
