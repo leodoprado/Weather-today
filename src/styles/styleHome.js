@@ -8,7 +8,7 @@ export const Container = styled.div`
     align-items: center;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
-    background: #fff;
+    background: #433477;
 `
 
 export const ContainerContent = styled.div`
@@ -42,7 +42,7 @@ export const Title = styled.div`
     flex-direction: column;
     font-size: 25px;
     font-weight: 700;
-    color: #0080cd;
+    color: #cfcfcf;
 `
 
 export const ContainerInput = styled.div`
@@ -57,8 +57,8 @@ export const ContainerInput = styled.div`
         background-color: transparent;
         border: 0;
         width: 400px;
-        font-size: 20px;
-        color: gray;
+        font-size: 25px;
+        color: #cfcfcf;
         outline: none;
         margin-right: 8px;
     }

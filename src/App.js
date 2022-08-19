@@ -1,6 +1,6 @@
 import { Container, ContainerContent, ContainerHeader, Title, ContainerInput } from "./styles/styleHome";
 
-import logo from "./assets/logo4.png"
+import logo from "./assets/logo.png"
 
 import { FiSearch } from 'react-icons/fi';
 
@@ -22,7 +22,7 @@ function App() {
             />
 
             <button >
-              <FiSearch size={25} color='gray' />
+              <FiSearch size={25} color='white' />
             </button>
           </ContainerInput>
         </ContainerContent>
