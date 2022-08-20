@@ -77,3 +77,8 @@ export const ContainerInput = styled.div`
         transform: scale(1.2);
     }
 `
+
+export const ContainerContentWeather = styled.div`
+    font-size: 30px;
+    color: #cfcfcf;
+`

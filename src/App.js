@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Container, ContainerContent, ContainerHeader, Title, ContainerInput } from "./styles/styleHome";
+import { Container, ContainerContent, ContainerHeader, Title, ContainerInput, ContainerContentWeather } from "./styles/styleHome";
 import logo from "./assets/logo.png"
 import { FiSearch } from 'react-icons/fi';
 
@@ -37,22 +37,20 @@ function App() {
             onKeyPress={searchLocation}
             type="text" 
             placeholder="Digite a cidade que deseja buscar..."/>
-
-            <button >
-              <FiSearch size={25} color='white' />
-            </button>
           </ContainerInput>
-          <div className="top">
-            <div className="location">
-              <p>{data.name}</p>
+          <ContainerContentWeather>
+            <div className="top">
+              <div className="location">
+                <p>{data.name}</p>
+              </div>
+              <div className="temp">
+                {data.main ? <h1>{((data.main.temp - 30)/2).toFixed()}°C</h1> : null}
+              </div>
+              <div className="description">
+                {data.weather ? <p>{data.weather[0].main}</p> : null}
+              </div>
             </div>
-            <div className="temp">
-              {data.main ? <h1>{((data.main.temp - 30)/2).toFixed()}°C</h1> : null}
-            </div>
-            <div className="description">
-              {data.weather ? <p>{data.weather[0].main}</p> : null}
-            </div>
-          </div>
+          </ContainerContentWeather>
         </ContainerContent>
       </Container>
   );
