@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Container, ContainerContent, ContainerHeader, Title, ContainerInput, ContainerContentWeather } from "./styles/styleHome";
 import logo from "./assets/logo.png"
-import { FiSearch } from 'react-icons/fi';
 
 function App() {
   const [data, setData] = useState({});
